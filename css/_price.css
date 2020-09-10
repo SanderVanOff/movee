@@ -1,0 +1,131 @@
+.price {
+  padding: 60px 0 67px 0;
+}
+.price__name-block {
+  margin: 0 0 60px 0;
+}
+.price__title {
+  margin: 0 0 15px 0;
+}
+.price__content {
+  display: grid;
+  grid-template-columns: repeat(3, 420px);
+  justify-content: center;
+  grid-column-gap: 23px;
+}
+.price-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 85px 90px 75px 90px;
+  border: 1px solid #ebebeb;
+  transition: all 0.3s ease-in-out;
+}
+.price-item-show {
+  height: 100%;
+  visibility: visible;
+  padding: 70px 40px 75px 40px;
+}
+
+.price-item:hover {
+  border: 1px solid #fed100;
+}
+.price-item__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0 0 60px 0;
+}
+.price__specifications {
+  margin: 0 0 60px 0;
+}
+.price-specifications__specification {
+  text-align: center;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0 0 25px 0;
+}
+.price-item__price {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+.price-item__btn {
+  background: #fed100;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 14px 75px;
+}
+.price-item__btn:hover {
+  opacity: 0.7;
+}
+.price-content__show-all {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 131.4%;
+  text-align: center;
+  text-decoration: underline;
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .price__content {
+    grid-template-columns: repeat(3, 380px);
+  }
+  .price-item {
+    padding: 70px 40px 75px 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .price__content {
+    grid-template-columns: 420px;
+    grid-row-gap: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .price__content {
+    grid-row-gap: 0;
+  }
+
+  .price-item:not(:first-child) {
+    height: 0;
+    visibility: hidden;
+    padding: 0;
+  }
+
+  .price-item:not(:first-child).price-item-show {
+    height: 100%;
+    visibility: visible;
+    padding: 70px 40px 75px 40px;
+  }
+  .price-content__show-all {
+    display: inline-block;
+    margin: 30px 0 0 0;
+  }
+  .price-content__show-all.card-show {
+    margin: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .price__content {
+    grid-template-columns: 95%;
+  }
+  .price-item {
+    padding: 50px 40px;
+  }
+  .price-item__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 0 25px 0;
+  }
+  .price__specifications {
+    margin: 0 0 43px 0;
+  }
+}

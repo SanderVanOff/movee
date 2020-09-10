@@ -1,0 +1,232 @@
+.modal-window__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--yellow-color);
+  z-index: 50;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.modal-window__wrapper_visible {
+  display: flex;
+}
+
+/* body + .modal-window__wrapper_visible {
+  overflow: hidden;
+} */
+.modal-window__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 50px 50px 85px 50px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #ccc;
+  position: relative;
+}
+.modal-window__inner::before {
+  position: absolute;
+  bottom: -5px;
+  left: -50px;
+  content: "";
+  max-width: 220px;
+  width: 100%;
+  height: 300px;
+  z-index: 51;
+}
+
+.webp .modal-window__inner::before {
+  background: url(../img/modal/modal-man.webp) no-repeat;
+  background-size: cover;
+}
+.no-webp .modal-window__inner::before {
+  background: url(../img/modal/modal-man.png) no-repeat;
+  background-size: cover;
+}
+.modal-window__close {
+  font-size: 36px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+.modal-window__title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  margin: 0 0 10px 0;
+}
+.modal-window__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0 0 30px 0;
+}
+.form-details-input {
+  border: none;
+  margin: 0 0 10px 0;
+  background: transparent;
+  display: block;
+}
+.modal-window__inner .feedback-form {
+  flex-direction: column;
+}
+
+.modal-window__inner .feedback-form__input {
+  margin: 0 0 40px 0;
+  padding: 10px;
+}
+
+.modal-window__inner .feedback-form__submit {
+  margin: 0 auto;
+  order: 3;
+}
+
+.modal-window__inner .feedback-form__checkbox-label {
+  right: 0;
+  width: 100%;
+}
+.modal-window__inner .feedback-form__submit {
+  width: 100%;
+}
+.modal-window__inner .feedback-form__submit::after {
+  display: none;
+}
+.modal-window__inner .feedback-form__submit:hover {
+  width: 100%;
+  opacity: 0.7;
+}
+.form__details {
+  margin: 0 0 20px 0;
+  display: none;
+}
+.modal-details .form__details-show {
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__details-item {
+  display: inline-block;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+/* modal-mail */
+.modal-mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.modal-mail__block {
+  width: 400px;
+  height: 200px;
+  background: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 40px 80px rgba(29, 7, 6, 0.3);
+}
+.modal-mail__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 10px 0;
+}
+.modal-mail__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .modal-window__title {
+    font-size: 34px;
+    text-align: center;
+  }
+  .modal-window__inner .feedback-form__checkbox-label {
+    right: auto;
+    transform: translateX(0);
+  }
+  .modal-window__inner::before {
+    left: -120px;
+  }
+}
+@media (max-width: 800px) {
+  .modal-window__inner {
+    width: 65%;
+  }
+  .modal-window__close {
+    top: 2%;
+  }
+}
+@media (max-width: 600px) {
+  .modal-window__inner {
+    width: 80%;
+  }
+  .modal-window__inner::before {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-window__inner {
+    width: 90%;
+  }
+  .modal-window__title {
+    font-size: 30px;
+  }
+  .modal-window__subtitle {
+    font-size: 12px;
+    text-align: center;
+  }
+  .modal-window__inner .feedback-form__input {
+    width: 100%;
+  }
+  .modal-window__inner .feedback-form__submit {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .modal-window__inner {
+    padding: 50px 30px 85px 30px;
+  }
+  .modal-window__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 320px) {
+  .modal-window__inner {
+    width: 95%;
+  }
+  .modal-window__close {
+    top: 2%;
+    right: 6%;
+  }
+  .modal-window__subtitle {
+    font-size: 12px;
+  }
+  .modal-window__inner .feedback-form__submit {
+    font-size: 18px;
+  }
+  .modal-window__inner .feedback-form__checkbox-label {
+    font-size: 10px;
+  }
+}
