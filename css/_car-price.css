@@ -9,11 +9,13 @@
 .car-park__content {
   padding: 0 0 45px 0;
 }
+
 .car-park__tabs {
   display: flex;
   justify-content: center;
   margin: 0 0 50px 0;
 }
+
 .car-park__tab {
   font-weight: 500;
   font-size: 20px;
@@ -22,38 +24,47 @@
   border: 1px solid #ebebeb;
   transition: all 0.3s ease;
 }
+
 .car-park__tab:hover {
   border: 1px solid #fed100;
 }
+
 .car-park__tab:not(:last-child) {
   margin: 0 20px 0 0;
 }
+
 .car-park__tab_active {
   border: 1px solid #fed100;
 }
+
 .swiper-container-card {
   display: none;
 }
+
 .car__park__wrapper {
   display: flex;
   position: relative;
 }
+
 .car-park-item {
   display: grid;
   justify-content: center;
   grid-template-columns: 360px 640px;
 }
+
 .car-park-item__about {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .car-park-item__title {
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
   margin: 0 0 35px 0;
 }
+
 .car-park-item__features-item {
   font-weight: normal;
   font-size: 16px;
@@ -61,6 +72,7 @@
   list-style: none;
   margin: 0 0 28px 0;
 }
+
 .car-park-item__features-item:before {
   content: "";
   display: inline-block;
@@ -69,6 +81,7 @@
   background: url(../img/car-park/check.svg) no-repeat;
   margin: 0 15px 0 0;
 }
+
 .car-park-item__btn {
   background: #fed100;
   border: none;
@@ -79,9 +92,11 @@
   width: 250px;
   transition: all 0.3s ease-in-out;
 }
+
 .car-park-item__btn:hover {
   opacity: 0.7;
 }
+
 .car-park-item__image {
   max-width: 640px;
   /* width: 100%; */
@@ -111,6 +126,11 @@
   cursor: pointer;
   z-index: 10;
 }
+
+.swiper-button-disabled {
+  opacity: 0.5;
+}
+
 .car-park__item-next {
   left: auto;
   right: 0;
@@ -126,6 +146,7 @@
   z-index: 10;
   display: none;
 }
+
 .slider-pagination__bullet {
   width: 14px;
   height: 14px;
@@ -135,6 +156,7 @@
   border: 2px solid transparent;
   position: relative;
 }
+
 .slider-pagination__bullet::after {
   content: "";
   width: 8px;
@@ -147,9 +169,11 @@
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
 }
+
 .slider-pagination__bullet:not(:last-child) {
   margin-right: 10px;
 }
+
 .slider-pagination__bullet-active {
   width: 14px;
   height: 14px;
@@ -160,6 +184,7 @@
   .car-park-item {
     grid-template-columns: 260px 640px;
   }
+
   .car-park__item-prev,
   .car-park__item-next {
     display: none;
@@ -171,35 +196,44 @@
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 1fr;
   }
+
   .car-park-item__features-list {
     display: flex;
     justify-content: space-around;
   }
+
   .car-park-item__about {
     order: 1;
   }
+
   .car-park-item__title {
     margin: 0 auto 35px auto;
   }
+
   .car-park-item__image {
     margin: 0 auto;
     order: 0;
   }
+
   .car-park-item__btn {
     margin: 0 auto;
   }
 }
+
 @media (max-width: 600px) {
   .car-park__tab {
     font-size: 16px;
     padding: 10px 40px;
   }
+
   .car-park-item__features-list {
     flex-wrap: wrap;
   }
+
   .car-park-item__features-item {
     flex-basis: 48%;
   }
+
   .car-park-item__image {
     height: auto;
   }
@@ -209,20 +243,25 @@
   .car-park__tabs {
     margin: 0 0 30px 0;
   }
+
   .car-park__tab {
     padding: 10px 30px;
     margin: 0;
   }
+
   .car-park-item {
     grid-template-rows: 1fr 1fr;
   }
+
   .car-park-item__about {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
   .car-park-item__features-item::before {
     display: none;
   }
+
   .car-park-item__title {
     font-weight: normal;
     font-size: 16px;
@@ -232,19 +271,24 @@
     display: flex;
     justify-content: flex-end;
   }
+
   .car-park-item__features-item {
     flex-basis: 100%;
   }
+
   .car-park-item__features-item:not(:last-child) {
     display: none;
   }
+
   .car-park-item__title::after {
     content: "/";
     margin: 0 2px;
   }
+
   .car-park-item__btn {
     max-height: 60px;
   }
+
   .slider-pagination {
     display: flex;
   }
@@ -254,10 +298,12 @@
   .car-park__name-block {
     margin: 0 0 20px;
   }
+
   .car-park__tab {
     padding: 10px 20px;
     line-height: 20px;
   }
+
   .car-park__tab:not(:last-child) {
     margin: 0;
   }
