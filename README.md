@@ -18,7 +18,7 @@
   - реализация отправки письма при помощи php-mailer;
   - страница добавлена на GitHub
 
-Ссылка: https://sanderbest.github.io/movee/
+Ссылка: https://sandervanoff.github.io/movee/
 ![YR3ol3C10DVzO0xi](https://user-images.githubusercontent.com/61217980/130011670-bc14375c-c580-4871-96b2-2cf92617cc34.png)
 
 
